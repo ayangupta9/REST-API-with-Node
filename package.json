@@ -1,0 +1,32 @@
+{
+  "name": "restapi_with_nodejs",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayangupta9/REST-API-with-Node.git"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api",
+    "shop"
+  ],
+  "author": "Ayan Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayangupta9/REST-API-with-Node/issues"
+  },
+  "homepage": "https://github.com/ayangupta9/REST-API-with-Node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
