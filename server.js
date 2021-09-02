@@ -14,6 +14,8 @@ mongoose.connect(uri, {
   useUnifiedTopology: true
 })
 
+mongoose.Promise = global.Promise
+
 const db = mongoose.connection
 
 db.once('open', function () {
@@ -22,6 +24,8 @@ db.once('open', function () {
     console.log('Server running on ' + PORT)
   })
 })
+
+app.use('/uploads', express.static('uploads'))
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
